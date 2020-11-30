@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".homeActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:onClick="pindahawal"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="Kursus Apa Yang Anda Cari ?"
+        android:textColor="#32E0C4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivmencari"
+        android:layout_width="360dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/bgmencari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:background="@drawable/bg_menu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        
+            <LinearLayout
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/bg_english"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp">
+
+                                <ImageView
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:src="@drawable/enn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginLeft="12dp"
+                                    android:textSize="18sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bahasa Inggris"
+                                    android:textStyle="bold"
+                                    android:textColor="#FFF"/>
+
+
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/bg_programing"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="pindahPrograming">
+
+                        <ImageView
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/programming2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginLeft="12dp"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Programing"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="24dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_semuakelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/semuakelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="12dp"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matkul Pilihan"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/math2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginLeft="12dp"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matematika"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

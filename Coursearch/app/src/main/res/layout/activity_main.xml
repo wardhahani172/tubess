@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hammersmith_one"
+        android:text="Coursearch"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <ImageView
+        android:layout_width="379dp"
+        android:layout_height="256dp"
+        android:src="@drawable/mencari"
+        android:id="@+id/ivbg"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvjudul" />
+
+    <TextView
+        android:id="@+id/tvdeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="478dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivbg"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnSelengkapnya"
+        android:layout_width="273dp"
+        android:layout_height="62dp"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="pindahHome"
+        android:text="Selengkapnya"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdeskripsi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
